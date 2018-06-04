@@ -34,7 +34,7 @@ public class GetContent {
 				return content;
 			}
 		} catch (IOException e) {
-			return "获取正文内容异常！";
+			return "获取正文内容异常";
 		}
 	}
 }

@@ -1,10 +1,12 @@
-package tencent;
+package common;
 import java.sql.*;
 public class MysqlOp {
-	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-	static final String DB_URL = "jdbc:mysql://172.17.175.102:3306/?useSSL=false";
+//	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
+	static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
+//	static final String DB_URL = "jdbc:mysql://192.168.1.166:3306/?useSSL=false";
+	static final String DB_URL = "jdbc:mysql://localhost:3306/?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC";
 	static final String USER = "root";
-	static final String PASSWORD = "123456.";
+	static final String PASSWORD = "201625010412";
 	
 	public void Operation(String operation) {
 		Connection connection = null;
