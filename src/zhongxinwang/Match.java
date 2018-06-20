@@ -22,7 +22,8 @@ public class Match {
 			if (!e.select("div.dd_bt").text().equals("")) {
 				if (e.select("div.dd_lm").toString() != null) {
 					if (((e.select("div.dd_lm").text()).indexOf("图片") >= 0)
-							|| ((e.select("div.dd_lm").text()).indexOf("视频") >= 0)) {
+							|| ((e.select("div.dd_lm").text()).indexOf("视频") >= 0))
+					{
 						continue;
 					}
 					java.io.File file = new java.io.File("keyword.txt");
